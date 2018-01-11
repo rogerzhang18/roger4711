@@ -25,7 +25,7 @@ and open the template in the editor.
         $first->add_grade(65);
         $first->add_grade(75);
         $first->add_grade(55);
-        $students['a123'] = $first;
+        $students['a123456'] = $first;
         
         // Adds second student
         $second = new Student();
@@ -37,7 +37,7 @@ and open the template in the editor.
         $second->add_grade(95);
         $second->add_grade(80);
         $second->add_grade(50);
-        $students['a456'] = $second;
+        $students['a456789'] = $second;
         
         // Adds third student
         $third = new Student();
