@@ -9,7 +9,7 @@
 /**
  * Description of Student
  *
- * @author Zhang Yongjian (Roger)
+ * @author Zhang Yongjian(Roger)
  * @version 1.0
  */
 class Student {
