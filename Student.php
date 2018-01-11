@@ -9,10 +9,11 @@
 /**
  * Description of Student
  *
- * @author zhang
+ * @author Zhang Yongjian (Roger)
+ * @version 1.0
  */
 class Student {
-    // Constructor
+    // Constructor - setup the students
     function __construct() {
     $this->surname = '';
     $this->first_name = '';
@@ -25,12 +26,12 @@ class Student {
     $this->emails[$which] = $address;
     }
 
-    // Adds the grades
+    // Adds the grade
     function add_grade($grade) {
         $this->grades[] = $grade;
     }
     
-    // Computes the average of the scores
+    // Computes the average of the scores from the array of scores
     function average() {
         $total = 0;
         foreach ($this->grades as $value)
@@ -38,7 +39,7 @@ class Student {
         return $total / count($this->grades);
     }
     
-    // Displays the information of the students
+    // Displays the information of the students on the browser
     function toString() {
         $result = $this->first_name . ' ' . $this->surname;
         $result .= ' ('.$this->average().")\n";
